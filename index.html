@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">AUSTRAL<span>TEC</span></a>
@@ -27,14 +26,15 @@
             <a href="https://wa.me/56984536120" target="_blank" class="nav-cta">
                 <i class="fab fa-whatsapp"></i> Cotizar
             </a>
-            <div class="nav-toggle">
-                <span></span><span></span><span></span>
-            </div>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
         </div>
     </nav>
 
-    <!-- HERO -->
     <section class="hero" id="inicio">
+        <div class="bubbles-container">
+            <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+            <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+        </div>
         <div class="hero-content">
             <span class="hero-badge">🔧 +10 años de experiencia</span>
             <h1>Especialistas en <span>Mantención Electromecánica</span> Industrial</h1>
@@ -50,13 +50,9 @@
         </div>
     </section>
 
-    <!-- NOSOTROS -->
     <section id="nosotros">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Nosotros</h2>
-                <p>Experiencia y compromiso con la industria</p>
-            </div>
+            <div class="section-header fade-in"><h2>Nosotros</h2><p>Experiencia y compromiso con la industria</p></div>
             <div class="about-grid">
                 <div class="about-image fade-in">
                     <img src="assets/images/about.jpg" alt="Equipo AustralTec" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800'">
@@ -66,181 +62,60 @@
                     <p>AustralTec es una empresa dedicada a prestar servicios de <strong>reparaciones y mantenimientos electromecánicos</strong> con más de una década de experiencia. Nos especializamos en generadores, motores diésel, motores eléctricos, bombas y redes de gas industriales.</p>
                     <p>Nuestros valores fundamentales son la <strong>confianza</strong>, la <strong>calidad</strong> y la <strong>respuesta rápida</strong>. Cada proyecto refleja nuestro compromiso con la excelencia técnica.</p>
                     <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Años de experiencia</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Proyectos realizados</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Atención emergencias</div>
-                        </div>
+                        <div class="stat-item"><div class="stat-number">10+</div><div class="stat-label">Años de experiencia</div></div>
+                        <div class="stat-item"><div class="stat-number">500+</div><div class="stat-label">Proyectos realizados</div></div>
+                        <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Atención emergencias</div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVICIOS -->
     <section id="servicios">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Nuestros Servicios</h2>
-                <p>Soluciones electromecánicas integrales para tu operación</p>
-            </div>
+            <div class="section-header fade-in"><h2>Nuestros Servicios</h2><p>Soluciones electromecánicas integrales para tu operación</p></div>
             <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>Generadores Diésel</h3>
-                    <p>Reparación, mantención preventiva y correctiva, y monitoreo de generadores diésel de todas las potencias y marcas.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
-                    <h3>Motores Diésel</h3>
-                    <p>Servicio técnico especializado para motores diésel industriales. Diagnóstico, reparación integral y puesta en marcha.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-plug"></i></div>
-                    <h3>Motores Eléctricos</h3>
-                    <p>Rebobinado, reparación y mantención de motores eléctricos. Soluciones confiables para equipos industriales críticos.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-tint"></i></div>
-                    <h3>Bombas Industriales</h3>
-                    <p>Mantención y reparación de bombas de agua, hidráulicas y de proceso. Minimiza tiempos de inactividad en tu operación.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
-                    <h3>Descarbonización Interna</h3>
-                    <p>Servicio especializado de descarbonización interna de motores para recuperar potencia, eficiencia y reducir emisiones.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-fire"></i></div>
-                    <h3>Redes de Gas Industriales</h3>
-                    <p>Reparación, mantención preventiva y correctiva de redes de gas industriales. Cumplimiento de normativas vigentes.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Monitoreo de Equipos</h3>
-                    <p>Monitoreo continuo del estado de generadores y equipos electromecánicos. Detección temprana de fallas y análisis predictivo.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                    <h3>Atención de Emergencias</h3>
-                    <p>Servicio 24/7 para emergencias industriales. Respuesta rápida ante fallas críticas para minimizar el impacto en tu operación.</p>
-                </div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-bolt"></i></div><h3>Generadores Diésel</h3><p>Reparación, mantención preventiva y correctiva, y monitoreo de generadores diésel de todas las potencias y marcas.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-cogs"></i></div><h3>Motores Diésel</h3><p>Servicio técnico especializado para motores diésel industriales. Diagnóstico, reparación integral y puesta en marcha.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-plug"></i></div><h3>Motores Eléctricos</h3><p>Rebobinado, reparación y mantención de motores eléctricos. Soluciones confiables para equipos industriales críticos.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-tint"></i></div><h3>Bombas Industriales</h3><p>Mantención y reparación de bombas de agua, hidráulicas y de proceso. Minimiza tiempos de inactividad en tu operación.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-leaf"></i></div><h3>Descarbonización Interna</h3><p>Servicio especializado de descarbonización interna de motores para recuperar potencia, eficiencia y reducir emisiones.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-fire"></i></div><h3>Redes de Gas Industriales</h3><p>Reparación, mantención preventiva y correctiva de redes de gas industriales. Cumplimiento de normativas vigentes.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-chart-line"></i></div><h3>Monitoreo de Equipos</h3><p>Monitoreo continuo del estado de generadores y equipos electromecánicos. Detección temprana de fallas y análisis predictivo.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-exclamation-triangle"></i></div><h3>Atención de Emergencias</h3><p>Servicio 24/7 para emergencias industriales. Respuesta rápida ante fallas críticas para minimizar el impacto en tu operación.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- PROYECTOS -->
     <section id="proyectos">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Proyectos Realizados</h2>
-                <p>Algunos de nuestros trabajos más recientes</p>
-            </div>
+            <div class="section-header fade-in"><h2>Proyectos Realizados</h2><p>Algunos de nuestros trabajos más recientes</p></div>
             <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <img src="assets/images/proyectos/proyecto1.jpg" alt="Generador industrial" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a302c?w=800'">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h4>Mantención Generador</h4>
-                            <p>Revisión integral de 1.000 kVA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <img src="assets/images/proyectos/proyecto2.jpg" alt="Descarbonización motor" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800'">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h4>Descarbonización</h4>
-                            <p>Motor diésel industrial</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <img src="assets/images/proyectos/proyecto3.jpg" alt="Red de gas" onerror="this.src='https://images.unsplash.com/photo-1558449028-b53a39d10076?w=800'">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h4>Red de Gas</h4>
-                            <p>Reparación industrial</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <img src="assets/images/proyectos/proyecto4.jpg" alt="Motor eléctrico" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800'">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h4>Motor Eléctrico</h4>
-                            <p>Rebobinado completo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <img src="assets/images/proyectos/proyecto5.jpg" alt="Bombas industriales" onerror="this.src='https://images.unsplash.com/photo-1581092334651-ddf25ee5c752?w=800'">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h4>Bombas Industriales</h4>
-                            <p>Mantención correctiva</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <img src="assets/images/proyectos/proyecto6.jpg" alt="Planta generadora" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800'">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h4>Planta Generadora</h4>
-                            <p>Servicio técnico integral</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto1.jpg" alt="Generador industrial" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a302c?w=800'"><div class="project-overlay"><div class="project-info"><h4>Mantención Generador</h4><p>Revisión integral de 1.000 kVA</p></div></div></div>
+                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto2.jpg" alt="Descarbonización motor" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800'"><div class="project-overlay"><div class="project-info"><h4>Descarbonización</h4><p>Motor diésel industrial</p></div></div></div>
+                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto3.jpg" alt="Red de gas" onerror="this.src='https://images.unsplash.com/photo-1558449028-b53a39d10076?w=800'"><div class="project-overlay"><div class="project-info"><h4>Red de Gas</h4><p>Reparación industrial</p></div></div></div>
+                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto4.jpg" alt="Motor eléctrico" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800'"><div class="project-overlay"><div class="project-info"><h4>Motor Eléctrico</h4><p>Rebobinado completo</p></div></div></div>
+                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto5.jpg" alt="Bombas industriales" onerror="this.src='https://images.unsplash.com/photo-1581092334651-ddf25ee5c752?w=800'"><div class="project-overlay"><div class="project-info"><h4>Bombas Industriales</h4><p>Mantención correctiva</p></div></div></div>
+                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto6.jpg" alt="Planta generadora" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800'"><div class="project-overlay"><div class="project-info"><h4>Planta Generadora</h4><p>Servicio técnico integral</p></div></div></div>
             </div>
         </div>
     </section>
 
-    <!-- POR QUÉ ELEGIRNOS -->
     <section id="elegirnos">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>¿Por Qué Elegirnos?</h2>
-                <p>Razones por las que nuestros clientes confían en nosotros</p>
-            </div>
+            <div class="section-header fade-in"><h2>¿Por Qué Elegirnos?</h2><p>Razones por las que nuestros clientes confían en nosotros</p></div>
             <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-award"></i></div>
-                    <h3>+10 Años de Experiencia</h3>
-                    <p>Más de una década resolviendo los desafíos electromecánicos más complejos de la industria.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Garantía Total</h3>
-                    <p>Todos nuestros trabajos cuentan con garantía por escrito. Respaldamos cada proyecto que realizamos.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>Respuesta Rápida</h3>
-                    <p>Atención inmediata para emergencias y tiempos de respuesta optimizados en todos nuestros servicios.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Visitas Técnicas Sin Costo</h3>
-                    <p>Realizamos visitas técnicas de levantamiento sin costo para evaluar tu proyecto con total transparencia.</p>
-                </div>
+                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-award"></i></div><h3>+10 Años de Experiencia</h3><p>Más de una década resolviendo los desafíos electromecánicos más complejos de la industria.</p></div>
+                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-shield-alt"></i></div><h3>Garantía Total</h3><p>Todos nuestros trabajos cuentan con garantía por escrito. Respaldamos cada proyecto que realizamos.</p></div>
+                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-bolt"></i></div><h3>Respuesta Rápida</h3><p>Atención inmediata para emergencias y tiempos de respuesta optimizados en todos nuestros servicios.</p></div>
+                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-tools"></i></div><h3>Visitas Técnicas Sin Costo</h3><p>Realizamos visitas técnicas de levantamiento sin costo para evaluar tu proyecto con total transparencia.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACTO -->
     <section id="contacto" class="contact-section">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Contacto</h2>
-                <p>Contáctanos directamente por WhatsApp</p>
-            </div>
+            <div class="section-header fade-in"><h2>Contacto</h2><p>Contáctanos directamente por WhatsApp</p></div>
             <div class="contact-box fade-in">
                 <div class="contact-main">
                     <i class="fab fa-whatsapp contact-icon"></i>
@@ -252,15 +127,13 @@
                 </div>
                 <div class="contact-social">
                     <a href="https://www.instagram.com/australtec.chile/" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                        <span>@australtec.chile</span>
+                        <i class="fab fa-instagram"></i><span>@australtec.chile</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
@@ -271,42 +144,14 @@
                     <a href="https://wa.me/56984536120" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-            <div class="footer-col">
-                <h4>Navegación</h4>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Servicios</h4>
-                <ul>
-                    <li><a href="#servicios">Generadores Diésel</a></li>
-                    <li><a href="#servicios">Motores Eléctricos</a></li>
-                    <li><a href="#servicios">Redes de Gas</a></li>
-                    <li><a href="#servicios">Emergencias</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contacto</h4>
-                <ul>
-                    <li><a href="https://wa.me/56984536120">+56 9 8453 6120</a></li>
-                    <li><a href="https://www.instagram.com/australtec.chile/">@australtec.chile</a></li>
-                </ul>
-            </div>
+            <div class="footer-col"><h4>Navegación</h4><ul><li><a href="#inicio">Inicio</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#proyectos">Proyectos</a></li></ul></div>
+            <div class="footer-col"><h4>Servicios</h4><ul><li><a href="#servicios">Generadores Diésel</a></li><li><a href="#servicios">Motores Eléctricos</a></li><li><a href="#servicios">Redes de Gas</a></li><li><a href="#servicios">Emergencias</a></li></ul></div>
+            <div class="footer-col"><h4>Contacto</h4><ul><li><a href="https://wa.me/56984536120">+56 9 8453 6120</a></li><li><a href="https://www.instagram.com/australtec.chile/">@australtec.chile</a></li></ul></div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 AustralTec Chile. Todos los derechos reservados.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 AustralTec Chile. Todos los derechos reservados.</p></div>
     </footer>
 
-    <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/56984536120?text=Hola%20AustralTec,%20necesito%20información" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
+    <a href="https://wa.me/56984536120?text=Hola%20AustralTec,%20necesito%20información" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     <script src="js/main.js"></script>
 </body>
 </html>
