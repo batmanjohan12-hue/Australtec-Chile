@@ -165,7 +165,7 @@ section { padding: 6rem 2rem; }
 .social-link { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.5rem; background: white; border-radius: 50px; text-decoration: none; color: var(--text-primary); font-weight: 500; transition: all 0.3s ease; border: 1px solid var(--border); }
 .social-link:hover { background: var(--primary); color: white; border-color: var(--primary); }
 
-/* FOOTER - VERDE AZULADO OSCURO */
+/* FOOTER */
 .footer { background: #0A3D33; color: white; padding: 4rem 2rem 2rem; }
 .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
 .footer-brand h3 { font-size: 1.5rem; margin-bottom: 1rem; }
@@ -205,7 +205,21 @@ section { padding: 6rem 2rem; }
     .nav-toggle.active span:nth-child(2) { opacity: 0; }
     .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
     .nav-cta { display: none; }
-    .hero h1 { font-size: 2.5rem; }
+
+    /* AJUSTE TÍTULO HERO EN MÓVIL */
+    .hero-content {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        text-align: left;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.15;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
     section { padding: 4rem 1.5rem; }
     .section-header h2 { font-size: 2rem; }
