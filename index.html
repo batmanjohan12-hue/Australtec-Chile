@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AustralTec | Especialistas en Mantención Electromecánica</title>
     <meta name="description" content="Más de 10 años brindando servicios de mantención y reparación de generadores diésel, motores, bombas y redes de gas industriales.">
+    
+    <!-- FAVICON - AustralTec -->
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="AustralTec">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <meta name="theme-color" content="#108C71">
+
+    <!-- FUENTES E ÍCONOS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">AUSTRAL<span>TEC</span></a>
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="AustralTec Logo" class="logo-img">
+                <div class="logo-text">AUSTRAL<span>TEC</span></div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#inicio" class="active">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -30,11 +47,29 @@
         </div>
     </nav>
 
+    <!-- HERO CON CARRUSEL INFINITO CONTINUO -->
     <section class="hero" id="inicio">
-        <div class="bubbles-container">
-            <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
-            <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+        <div class="hero-static-bg"></div>
+        
+        <div class="hero-carousel">
+            <div class="carousel-track">
+                <!-- Set Original -->
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-1.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-2.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-3.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-4.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-5.jpg')"></div>
+                <!-- Set Duplicado para loop infinito sin saltos -->
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-1.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-2.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-3.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-4.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-5.jpg')"></div>
+            </div>
         </div>
+        
+        <div class="hero-overlay"></div>
+
         <div class="hero-content">
             <span class="hero-badge">🔧 +10 años de experiencia</span>
             <h1>Especialistas en <span>Mantención Electromecánica</span> Industrial</h1>
@@ -50,12 +85,13 @@
         </div>
     </section>
 
+    <!-- NOSOTROS -->
     <section id="nosotros">
         <div class="container">
             <div class="section-header fade-in"><h2>Nosotros</h2><p>Experiencia y compromiso con la industria</p></div>
             <div class="about-grid">
-                <div class="about-image fade-in">
-                    <img src="assets/images/about.jpg" alt="Equipo AustralTec" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800'">
+                <div class="about-image-vertical fade-in">
+                    <img src="assets/images/about-vertical.jpg" alt="Equipo AustralTec" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600'">
                 </div>
                 <div class="about-text fade-in">
                     <h3>Experiencia que respalda cada proyecto</h3>
@@ -71,6 +107,7 @@
         </div>
     </section>
 
+    <!-- SERVICIOS -->
     <section id="servicios">
         <div class="container">
             <div class="section-header fade-in"><h2>Nuestros Servicios</h2><p>Soluciones electromecánicas integrales para tu operación</p></div>
@@ -87,20 +124,46 @@
         </div>
     </section>
 
+    <!-- PROYECTOS - VIDEOS CLICK TO PLAY -->
     <section id="proyectos">
         <div class="container">
-            <div class="section-header fade-in"><h2>Proyectos Realizados</h2><p>Algunos de nuestros trabajos más recientes</p></div>
-            <div class="projects-grid">
-                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto1.jpg" alt="Generador industrial" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a302c?w=800'"><div class="project-overlay"><div class="project-info"><h4>Mantención Generador</h4><p>Revisión integral de 1.000 kVA</p></div></div></div>
-                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto2.jpg" alt="Descarbonización motor" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800'"><div class="project-overlay"><div class="project-info"><h4>Descarbonización</h4><p>Motor diésel industrial</p></div></div></div>
-                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto3.jpg" alt="Red de gas" onerror="this.src='https://images.unsplash.com/photo-1558449028-b53a39d10076?w=800'"><div class="project-overlay"><div class="project-info"><h4>Red de Gas</h4><p>Reparación industrial</p></div></div></div>
-                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto4.jpg" alt="Motor eléctrico" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800'"><div class="project-overlay"><div class="project-info"><h4>Motor Eléctrico</h4><p>Rebobinado completo</p></div></div></div>
-                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto5.jpg" alt="Bombas industriales" onerror="this.src='https://images.unsplash.com/photo-1581092334651-ddf25ee5c752?w=800'"><div class="project-overlay"><div class="project-info"><h4>Bombas Industriales</h4><p>Mantención correctiva</p></div></div></div>
-                <div class="project-card fade-in"><img src="assets/images/proyectos/proyecto6.jpg" alt="Planta generadora" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800'"><div class="project-overlay"><div class="project-info"><h4>Planta Generadora</h4><p>Servicio técnico integral</p></div></div></div>
+            <div class="section-header fade-in"><h2>Proyectos en Acción</h2><p>Toca un video para reproducirlo</p></div>
+        </div>
+        <div class="video-carousel-wrapper fade-in">
+            <button class="video-nav video-nav-left" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+            <div class="video-carousel">
+                <div class="video-track" id="videoTrack">
+                    <div class="video-card" data-video="assets/videos/proyecto1.mp4" data-poster="assets/videos/poster1.jpg">
+                        <div class="video-poster"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                        <video muted loop playsinline preload="none"></video>
+                    </div>
+                    <div class="video-card" data-video="assets/videos/proyecto2.mp4" data-poster="assets/videos/poster2.jpg">
+                        <div class="video-poster"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                        <video muted loop playsinline preload="none"></video>
+                    </div>
+                    <div class="video-card" data-video="assets/videos/proyecto3.mp4" data-poster="assets/videos/poster3.jpg">
+                        <div class="video-poster"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                        <video muted loop playsinline preload="none"></video>
+                    </div>
+                    <div class="video-card" data-video="assets/videos/proyecto4.mp4" data-poster="assets/videos/poster4.jpg">
+                        <div class="video-poster"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                        <video muted loop playsinline preload="none"></video>
+                    </div>
+                    <div class="video-card" data-video="assets/videos/proyecto5.mp4" data-poster="assets/videos/poster5.jpg">
+                        <div class="video-poster"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                        <video muted loop playsinline preload="none"></video>
+                    </div>
+                    <div class="video-card" data-video="assets/videos/proyecto6.mp4" data-poster="assets/videos/poster6.jpg">
+                        <div class="video-poster"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                        <video muted loop playsinline preload="none"></video>
+                    </div>
+                </div>
             </div>
+            <button class="video-nav video-nav-right" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
 
+    <!-- POR QUÉ ELEGIRNOS -->
     <section id="elegirnos">
         <div class="container">
             <div class="section-header fade-in"><h2>¿Por Qué Elegirnos?</h2><p>Razones por las que nuestros clientes confían en nosotros</p></div>
@@ -113,6 +176,7 @@
         </div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="contact-section">
         <div class="container">
             <div class="section-header fade-in"><h2>Contacto</h2><p>Contáctanos directamente por WhatsApp</p></div>
@@ -134,6 +198,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
@@ -151,7 +216,10 @@
         <div class="footer-bottom"><p>&copy; 2026 AustralTec Chile. Todos los derechos reservados.</p></div>
     </footer>
 
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
     <a href="https://wa.me/56984536120?text=Hola%20AustralTec,%20necesito%20información" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    
+    <!-- SCRIPTS -->
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+{
+    "name": "AustralTec",
+    "short_name": "AustralTec",
+    "icons": [
+        {
+            "src": "favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon.svg",
+            "type": "image/svg+xml"
+        }
+    ],
+    "theme_color": "#108C71",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
