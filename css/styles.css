@@ -123,7 +123,6 @@ body {
 /* ===== HERO - CARRUSEL VISIBLE DESDE EL INICIO, PAUSA Y LUEGO SE MUEVE ===== */
 .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; background: #0A3D33; }
 
-/* Carrusel siempre visible, sin fade */
 .hero-carousel { 
     position: absolute; 
     inset: 0; 
@@ -131,13 +130,12 @@ body {
     opacity: 1;
 }
 
-/* Track: visible inmediatamente, se mueve después de 1.5s */
 .carousel-track { 
     display: flex; 
     height: 100%; 
     width: max-content;
-    animation: heroSlideContinuous 50s linear infinite;
-    animation-delay: 1.5s; /* Pausa inicial antes de empezar a moverse */
+    animation: heroSlideContinuous 40s linear infinite;
+    animation-delay: 1.5s;
 }
 .carousel-slide { 
     min-width: 100vw; 
@@ -145,7 +143,7 @@ body {
     background-size: cover; 
     background-position: center; 
     flex-shrink: 0; 
-    background-color: #0A3D33; /* Respaldo mientras carga la imagen */
+    background-color: #0A3D33;
 }
 
 @keyframes heroSlideContinuous {
@@ -688,6 +686,98 @@ section { padding: 7rem 2rem; }
     font-size: 0.875rem; 
 }
 
+/* ===== FOOTER MAP SECTION (Premium) ===== */
+.footer-map-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.map-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.map-header h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+.map-header h4 i {
+    color: #3BA88F;
+    font-size: 1.375rem;
+}
+.map-header p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.map-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(59, 168, 143, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 400px;
+    filter: saturate(0.85) contrast(1.05) brightness(0.95);
+    transition: filter 0.4s ease;
+}
+
+.map-container:hover iframe {
+    filter: saturate(1) contrast(1.05) brightness(1);
+}
+
+.map-overlay-gradient {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 61, 51, 0.15) 0%,
+        transparent 15%,
+        transparent 85%,
+        rgba(10, 61, 51, 0.15) 100%
+    );
+    border-radius: 20px;
+}
+
+.map-directions-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.875rem 2rem;
+    background: var(--gradient);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 16px rgba(16, 140, 113, 0.3);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 220px;
+}
+
+.map-directions-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(16, 140, 113, 0.4);
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp { 
     from { opacity: 0; transform: translateY(30px); } 
@@ -770,6 +860,21 @@ section { padding: 7rem 2rem; }
     .section-header h2 { font-size: 2.25rem; }
     .contact-whatsapp { font-size: 1.125rem; padding: 1.25rem 2rem; }
     .contact-box { padding: 3rem 2rem; }
+    .footer-map-section {
+        padding: 2.5rem 0 1.5rem;
+    }
+    .map-header h4 {
+        font-size: 1.25rem;
+    }
+    .map-header p {
+        font-size: 0.9375rem;
+    }
+    .map-container {
+        border-radius: 16px;
+    }
+    .map-container iframe {
+        height: 300px;
+    }
 }
 @media (max-width: 480px) {
     .hero-buttons { flex-direction: column; }
@@ -780,4 +885,11 @@ section { padding: 7rem 2rem; }
     .video-nav { width: 38px; height: 38px; font-size: 0.9375rem; }
     .video-nav-left { left: 0.5rem; }
     .video-nav-right { right: 0.5rem; }
+    .map-container iframe {
+        height: 260px;
+    }
+    .map-directions-btn {
+        width: 100%;
+        max-width: none;
+    }
 }
