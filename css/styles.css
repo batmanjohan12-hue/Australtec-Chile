@@ -136,7 +136,7 @@ body {
     display: flex; 
     height: 100%; 
     width: max-content;
-    animation: heroSlideContinuous 40s linear infinite;
+    animation: heroSlideContinuous 50s linear infinite;
     animation-delay: 1.5s; /* Pausa inicial antes de empezar a moverse */
 }
 .carousel-slide { 
